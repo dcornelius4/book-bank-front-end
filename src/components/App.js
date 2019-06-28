@@ -10,12 +10,14 @@ import BookClub from '../components/bookclub/BookClub';
 import Home from './Home';
 // import Layout from './layout/Layout';
 import { NavigationBar } from '../components/layout/NavigationBar';
+import { Jumbotron } from '../components/layout/Jumbotron';
 
 export default function App() {
   return (
     <React.Fragment>
-      <NavigationBar />
       <Router>
+        <NavigationBar />
+        <Jumbotron />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/library" component={Library} />
