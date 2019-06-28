@@ -45,10 +45,8 @@ export const NavigationBar = () => {
                 Little Free Library
               </Link>
             </Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link>
-              <Link to="https://littlefreelibrary.org/ourmap/">
-                Add
-              </Link>
+            <Nav.Item><Nav.Link href="https://littlefreelibrary.org/registration-process/">
+                Register
             </Nav.Link></Nav.Item>
           </Nav>
         </Navbar.Collapse>
