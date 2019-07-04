@@ -5,7 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 import LittleFreeLib from '../components/lfb/LittleFreeLib';
-import Library from '../components/library/Library';
+import Library from '../components/libraries/library/MyLibrary';
 import Home from './Home';
 import CreateLibrary from '../containers/libraries/CreateLibrary';
 import { NavigationBar } from '../components/layout/NavigationBar';

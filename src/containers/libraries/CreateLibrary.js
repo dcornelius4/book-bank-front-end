@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import Add from '../../components/add/Add';
 import { connect } from 'react-redux';
 import { newLibrary } from '../../actions/libraryActions';
+import Add from '../../components/libraries/Add';
+
 
 class CreateLibrary extends PureComponent {
   static propTypes = {
