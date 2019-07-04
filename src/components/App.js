@@ -10,6 +10,7 @@ import Home from './Home';
 import CreateLibrary from '../containers/libraries/CreateLibrary';
 import { NavigationBar } from '../components/layout/NavigationBar';
 import { Jumbotron } from '../components/layout/Jumbotron';
+import LibraryById from '../containers/libraries/LibraryById';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/library" component={Library} />
           <Route path="/add" component={CreateLibrary} />
           <Route path="/littlefreelib" component={LittleFreeLib} />
+          <Route path="/libraries/:id" component={LibraryById} />
         </Switch>
       </Router>
     </>
