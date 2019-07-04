@@ -32,7 +32,7 @@ export const NavigationBar = () => {
             </Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link>
               <Link to="/library">
-                Library
+                My Library
               </Link>
             </Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link>
