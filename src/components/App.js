@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import LittleFreeLib from '../components/lfb/LittleFreeLib';
+import LittleFreeLib from '../components/libraries/library/LittleFreeLib';
 import Library from '../components/libraries/library/MyLibrary';
 import Home from './Home';
 import CreateLibrary from '../containers/libraries/CreateLibrary';
