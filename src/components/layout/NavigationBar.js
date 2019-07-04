@@ -36,8 +36,8 @@ export const NavigationBar = () => {
               </Link>
             </Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link>
-              <Link to="/bookclub">
-                Book Club
+              <Link to="/add">
+                Add
               </Link>
             </Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link>
