@@ -17,6 +17,7 @@ const Styles = styled.div`
   }
 `;
 
+
 export const NavigationBar = () => {
   return (
     <Styles>
@@ -31,18 +32,13 @@ export const NavigationBar = () => {
               </Link>
             </Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link>
-              <Link to="/library">
-                My Library
-              </Link>
-            </Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link>
-              <Link to="/add">
-                Add
-              </Link>
-            </Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link>
               <Link to="/littlefreelib">
-                Little Free Library
+              Little Free Library
+              </Link>
+            </Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link>
+              <Link to="/map">
+                Map
               </Link>
             </Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link href="https://littlefreelibrary.org/registration-process/">
