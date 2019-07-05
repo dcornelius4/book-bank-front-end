@@ -53,7 +53,7 @@ exports[`App component renders App 1`] = `
             "type": [Function],
           }
         }
-        path="/add"
+        path="/map"
       />
       <Route
         component={
@@ -66,6 +66,30 @@ exports[`App component renders App 1`] = `
           }
         }
         path="/littlefreelib"
+      />
+      <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(LibraryById)",
+            "type": [Function],
+          }
+        }
+        path="libraries/:id"
+      />
+      <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(CreateBook)",
+            "type": [Function],
+          }
+        }
+        path="/libraries/:id/books/:bookId"
       />
     </Switch>
   </BrowserRouter>
