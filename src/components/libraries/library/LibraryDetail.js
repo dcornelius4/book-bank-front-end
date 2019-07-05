@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { InputGroup, Button, FormControl } from 'react-bootstrap';
+import { InputGroup, Button, FormControl, Card } from 'react-bootstrap';
 import CreateBook from '../../../containers/books/CreateBook';
+import AllBooks from '../../../containers/books/AllBooks';
 
 function LibraryDetail({ library }) {
   const {
@@ -28,6 +29,11 @@ function LibraryDetail({ library }) {
             <Button variant="outline-secondary">Button</Button>
           </InputGroup.Append>
         </InputGroup>
+      </section>
+      <section>
+        {/* <Card>
+          <AllBooks />
+        </Card> */}
       </section>
     </>
   );

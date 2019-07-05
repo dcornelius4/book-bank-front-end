@@ -1,9 +1,13 @@
 import React from 'react';
+import AllBooks from '../../../containers/books/AllBooks';
+import { Card } from 'react-bootstrap';
 
 export default function Library() {
   return (
     <div>
-      <h2>Library</h2>
+      <Card>
+        <AllBooks />
+      </Card>
     </div>
   );
 }

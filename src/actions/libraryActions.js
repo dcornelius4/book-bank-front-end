@@ -1,5 +1,5 @@
 import { createAction } from 'promise-middleware-redux';
-import { makeLibrary, getLibraries, getLibrary } from '../services/bookApi';
+import { makeLibrary, getLibraries, getLibrary } from '../services/libraryApi';
 
 export const [
   newLibrary,

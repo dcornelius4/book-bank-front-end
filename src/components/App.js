@@ -10,8 +10,8 @@ import Home from './Home';
 import CreateLibrary from '../containers/libraries/CreateLibrary';
 import { NavigationBar } from '../components/layout/NavigationBar';
 import { Jumbotron } from '../components/layout/Jumbotron';
-import LibraryById from '../containers/libraries/LibraryById';
-import CreateBook from '../containers/books/CreateBook';
+import { withSession } from '../containers/auth/withSession';
+import Callback from '../containers/auth/Callback';
 
 export default function App() {
   return (
@@ -20,12 +20,11 @@ export default function App() {
         <NavigationBar />
         <Jumbotron />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/library" component={Library} />
-          <Route path="/add" component={CreateLibrary} />
-          <Route path="/littlefreelib" component={LittleFreeLib} />
-          <Route path="/libraries/:id" component={LibraryById} />
-          <Route path="/libraries/:id/books/:bookId" component={CreateBook} />
+          <Route exact path="/" component={withSession(Home)} />
+          <Route path="/callback" component={Callback} />
+          <Route path="/library" component={withSession(Library)} />
+          <Route path="/add" component={withSession(CreateLibrary)} />
+          <Route path="/littlefreelib" component={withSession(LittleFreeLib)} />
         </Switch>
       </Router>
     </>
