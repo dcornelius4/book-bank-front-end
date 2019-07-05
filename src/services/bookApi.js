@@ -4,3 +4,5 @@ export const makeLibrary = library => post('/libraries', library);
 export const getLibraries = () => get('/libraries');
 export const getLibrary = id => get(`/libraries/${id}`);
 export const makeBook =  book => post('/books', book);
+export const getBooks = () => get('/books');
+
