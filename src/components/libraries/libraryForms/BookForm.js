@@ -1,22 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { InputGroup, Button, FormControl } from 'react-bootstrap';
+import { InputGroup, Button, FormControl, Form } from 'react-bootstrap';
 
 function BookForm({ onSubmit, onChange, bookName, submitText }) {
   return (
-    <InputGroup onSubmit={onSubmit} className="mb-3">
-      <FormControl
-        name="bookName"
-        value={bookName}
-        onChange={onChange}
-        placeholder="Enter Book Name"
-        aria-label="Book Name"
-        aria-describedby="basic-addon"
-      />
-      <InputGroup.Append>
-        <Button variant="outline-secondary" type="submit">{submitText}</Button>
-      </InputGroup.Append>
-    </InputGroup>
+    <Form onSubmit={onSubmit}>
+      <InputGroup className="mb-3">
+        <FormControl
+          name="bookName"
+          value={bookName}
+          onChange={onChange}
+          placeholder="Enter Book Name"
+          aria-label="Book Name"
+          aria-describedby="basic-addon"
+        />
+        <InputGroup.Append>
+          <Button variant="outline-secondary" type="submit">{submitText}</Button>
+        </InputGroup.Append>
+      </InputGroup>
+    </Form>
   );
 }
 
